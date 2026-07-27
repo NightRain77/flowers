@@ -1,0 +1,276 @@
+header {
+  background-image: url('images/yellow.png');
+  background-size: cover; /* Ensures image covers the area */
+  background-color: rgba(255, 255, 255, 0.622);
+  background-blend-mode: lighten;
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  height: auto; /* Adjust based on your header design */
+  
+}
+h1
+{
+    color: darkgoldenrod;
+    font-size: 50px;
+    font-family: "Palatino", "URW Palladio L", serif;
+    text-align: center;
+}
+h3
+{
+    font-size: 25px;
+    font-family: "Palatino", "URW Palladio L", serif;
+    text-align: center;
+}
+body
+{
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+h4
+{
+    color:black;
+    text-align:left;
+    font-family: "Palatino", "URW Palladio L", serif;
+}
+
+h5
+{
+    color: gold;
+    font-size: 20px;
+    font-family: "Palatino", "URW Palladio L", serif;
+    text-align: center;
+}
+
+li
+{
+    text-align: left;
+}
+
+p {
+    color:black;
+    font-size: 17px;
+    text-align: left;
+}
+
+p a {
+    color: #c79a00;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #8b5a00;
+    text-decoration: none;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Monaco", "Courier New", monospace;
+  letter-spacing: 1px;
+  color: lightgoldenrodyellow;
+  font-size: 20px;
+}
+
+li.navbar {
+  float: none;
+}
+
+li.navbar a {
+  display: block;
+  color: #09142e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.navbar a:hover {
+  color: black;
+  background-color: palegoldenrod;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  border-bottom: 1px solid lightgoldenrodyellow;
+  padding-bottom: 10px;
+}
+
+.tab {
+  padding: 12px 24px; 
+  font-family: "Monaco", "Courier New", monospace;
+  margin: 0 5px 10px;
+  background: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #09142e;
+}
+
+.tab:hover {
+  background-color: #e9ecef;
+  color: #09142e;
+}
+
+.tab.active {
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  display: block;
+  background-color: #f9f7e8;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.item-info {
+  padding: 16px 16px 20px;
+  font-family: "Palatino", "URW Palladio L", serif;
+  text-align: center;
+  background-color: rgb(255, 252, 214);
+}
+
+.item-info h3 {
+  font-size: 1.2rem;
+  font-family: "Palatino", "URW Palladio L", serif;
+  text-align: center;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.item-info p {
+  color: black;
+  font-family: "Palatino", "URW Palladio L", serif;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.item-info a {
+  color: #09142e;
+  font-family: "Palatino", "URW Palladio L", serif;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.item-info a:hover {
+  color: darkgoldenrod;
+  background-color: palegoldenrod;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  color: #7f8c8d;
+  border-top: 1px solid #e1e4e8;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: #c79a00;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #8b5a00;
+  transform: translateY(-2px);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .tab {
+    padding: 10px 16px;
+    font-family: "Georgia", Times, serif;
+    font-size: 0.9rem;
+  }
+}
