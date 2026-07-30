@@ -522,7 +522,7 @@ const galleryData = [
     id: 79,
     title: "Night Train to Memphis",
     category: "daylily",
-    image: "images/NightTraintoMemphis.JPG",
+    image: "images/NightTraintoMemphis.jpg",
     link: "https://daylilydatabase.org/detail.php?id=156530&name=Night%20Train%20to%20Memphis"
   },
       {
@@ -627,7 +627,7 @@ const galleryData = [
     id: 95,
     title: "Princeton Silky",
     category: "daylily",
-    image: "images/Logo.JPG",
+    image: "images/PrincetonSilky.jpg",
     link: "https://daylilydatabase.org/detail.php?id=35811&name=Princeton%20Silky"
   },
         {
@@ -641,7 +641,7 @@ const galleryData = [
     id: 97,
     title: "Queen for a Day",
     category: "daylily",
-    image: "images/Queenforaday.jpg",
+    image: "images/Queenfortheday.jpg",
     link: "https://daylilydatabase.org/detail.php?id=36150&name=Queen%20for%20a%20Day"
   },
         {
@@ -667,7 +667,7 @@ const galleryData = [
     id: 101,
     title: "Red Tulip",
     category: "daylily",
-    image: "images/Logo.JPG",
+    image: "images/RedTulip.jpg",
   },
         {
     id: 102,
@@ -1015,7 +1015,7 @@ const galleryData = [
     id: 213,
     title: "Stargazer Lily",
     category: "other",
-    image: "images/Logo.JPG",
+    image: "images/Stargazer.jpg",
   },
 ];
 
